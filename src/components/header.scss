@@ -1,0 +1,16 @@
+.header{
+    background-color: #0D283B;
+    padding: 1rem;
+}
+
+.header-container{
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center; 
+    
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+}

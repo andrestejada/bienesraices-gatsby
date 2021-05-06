@@ -1,0 +1,35 @@
+.div-index{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.p-index{
+    text-align: center;
+}
+
+.background-image{
+    height: 600px;
+    background-image: url(https://www.promora.com/blog/wp-content/uploads/2017/05/re_5898_00009-800x500.jpg);
+}
+
+.imagenbg{
+    color: #FFF;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin: 0;
+    max-width: 800px;
+    @media (min-width: 992px) {
+        
+            font-size: 4rem;
+        
+    }
+}
