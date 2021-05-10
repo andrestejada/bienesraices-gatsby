@@ -10,7 +10,13 @@ query {
         nombre
         contenido
         imagen {
-          url
+          sharp: childImageSharp {
+            fluid( maxWidth: 1200 duotone: {
+                highlight: "#222222", shadow: "#192550", opacity: 30
+            } ) {
+                ...GatsbyImageSharpFluid_withWebp
+            }
+        }
         }
     }
 }
@@ -18,7 +24,7 @@ query {
 return resultado.allStrapiPaginas.nodes.map( inicio=>({
   nombre: inicio.nombre,
   contenido: inicio.contenido,
-  imagen: inicio.imagen[0].url
+  imagen: inicio.imagen
 }) )
     
 }

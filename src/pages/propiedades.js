@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-const Propiedades = () => {
+const Propiedades = ({data}) => {
+    console.log(data)
     return (
         <Layout>
             <h1>Propiedades</h1>

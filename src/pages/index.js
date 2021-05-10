@@ -5,22 +5,18 @@ import useInicio from "../hooks/useInicio"
 import  Encuentra from '../components/Encuentra'
 import './index.scss'
 import ListadoPropiedades from "../components/ListadoPropiedades"
-import usePropiedades from "../hooks/usePropiedades"
 
 const IndexPage = () => {
   
   const inicio = useInicio()  
   const { nombre , contenido , imagen}=inicio[0]
-
-  const propiedades = usePropiedades()
-
   return(
     <Layout>
 
       <BackgroundImage
         Tag='section'
         className='background-image'
-        fluid={imagen}
+        fluid={imagen.sharp.fluid}
       >
         <div className='imagenbg' >
           <h1 className='titulo' >Venta de casa y departamentos de lujo</h1>
@@ -34,7 +30,7 @@ const IndexPage = () => {
         </div>
       </main>
       <Encuentra/>
-
+      
       <ListadoPropiedades/>
     </Layout>
   )
